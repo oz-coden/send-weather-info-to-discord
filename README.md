@@ -1,6 +1,6 @@
 # Discordに天気情報を通知
 
-Google Apps Script (GAS) と WeatherAPI を使用して、指定した地域の天気予報を毎日DiscordのWebhookを使って通知するスクリプトです。
+Google Apps Script (GAS) と WeatherAPI を使用して、指定した地域の天気予報を毎日DiscordのWebhookを使って通知するスクリプトです。  
 Open-Meteo等のAPIをGASで実行する際に発生しやすいIPに基づくレート制限に引っかからないために、WeatherAPIを採用しています。
 
 ## 必要なもの
