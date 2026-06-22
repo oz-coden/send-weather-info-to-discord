@@ -2,11 +2,12 @@ function sendWeatherToDiscord() {
   const webhookUrl = "YOUR_DISCORD_WEBHOOK_URL";
   const weatherApiKey = "YOUR_WEATHERAPI_KEY";
   const weatherLocation = "YOUR_LOCATION_NAME";
+  const timezone = "YOUR_TIMEZONE";
 
   const apiUrl = `https://api.weatherapi.com/v1/forecast.json?key=${weatherApiKey}&q=${weatherLocation}&days=1&aqi=no&alerts=no`;
 
   var date = new Date();
-  var formattedDate = Utilities.formatDate(date, "Asia/Tokyo", "yyyy/MM/dd");
+  var formattedDate = Utilities.formatDate(date, `${timezone}`, "yyyy/MM/dd");
 
   try {
     const response = UrlFetchApp.fetch(apiUrl);
